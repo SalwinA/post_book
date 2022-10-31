@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import user_profile
+from .models import user_profile, user_post
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -8,7 +8,9 @@ from django.http import HttpResponse
 
 # Create your views here.
 def home(request):
-    return render(request, 'home.html')
+    posts = user_post.objects.all()
+    return render(request, 'home.html', {'posts': posts})
+
 
 @login_required(login_url='signin')
 def signup(request):

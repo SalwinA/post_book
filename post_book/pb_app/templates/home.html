@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
+
 <body>
     <header>
         <form action="add" method="POST">
             {% csrf_token %}
             <!-- Logo -->
             <div id="logo">
-                    <a href="home.html">
-                        <b><h1 style="text-transform: uppercase;">Post Book</h1></b>
-                    </a>
+                <a href="home.html">
+                    <b>
+                        <h1 style="text-transform: uppercase;">Post Book</h1>
+                    </b>
+                </a>
             </div>
-        </form>    
+        </form>
     </header>
 
     <nav>
         <ul>
             <li><a href="home.html" class="active">Home</a></li>
-            <li><a href="#" >Profile</a></li>
-            <li><a href="#" >Signup / Login</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Signup / Login</a></li>
 
         </ul>
     </nav>
-    
+
+    <div class="post">
+        <div>Matt</div>
+        <div>Earth is the third planet from the Sun and the only astronomical object known to harbor life. While large
+            volumes of water can be found throughout the Solar System, only Earth sustains liquid surface water. About
+            71% of Earth's surface is made up of the ocean, dwarfing Earth's polar ice, lakes, and rivers. The remaining
+            29% of Earth's surface is land, consisting of continents and islands. Earth's surface layer is formed of
+            several slowly moving tectonic plates, interacting to produce mountain ranges, volcanoes, and earthquakes.
+            Earth's liquid outer core generates the magnetic field that shapes Earth's magnetosphere, deflecting
+            destructive solar winds.</div>
+        <div>01/01/2020, 22:00 </div>
+
+
+    </div>
+
 </body>
+
 </html>

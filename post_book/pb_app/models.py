@@ -14,7 +14,7 @@ class user_profile(models.Model):
 
 class user_post(models.Model):
     user = models.CharField(max_length=50)
-    post_caption = models.TextField()
+    post_text = models.TextField()
     post_date = models.DateTimeField(default=datetime.now)
 
     def __str__(self):
