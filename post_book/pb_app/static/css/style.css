@@ -1,4 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+header {
+    background: #9873ff;
+}
+
+
 body {
     font-family: Oswald, sans-serif;
-    font-weight: 300;
+    font-weight: 500;
+    color: #1c1710;
+}
+
+/* Navigation bar */
+#nav {
+    font-size: 2rem;
+    text-align: right;
+}
+
+#nav >li {
+
+    display: inline;
+    list-style-type: none;
+    margin-right: 40px;
+
+}
+
+#nav a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 50px;
+
+}
+
+#nav a:hover {
+    border-bottom: 1px solid #1b1b1b;
+}
+
+.active {
+    border-bottom: 1px solid #1b1b1b;
+}
+
+/* Headings & Logo */
+
+h1,
+h2 {
+    font-family: Roboto, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #130810;
+}
+
+/* Footer */
+
+#social-links {
+    text-align: center;
+    background: #ff8273;
+    font-size: 2.5rem;
+    /* margin: auto; */
+}
+
+#social-links>li {
+    display: inline;
+    letter-spacing: 30px;
+
+}
+
+#social-links i {
+    color: #1b1b1b;
 }
